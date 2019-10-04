@@ -119,6 +119,7 @@ then
 			for j in ${php_installed_array[@]}
 			do
 				loop_php_module="$php5_module"
+				echo "$j"
 				loop_apache_php_lib_path="$apache_php5_lib_path"
 				if [ $(echo "$j" | sed 's/^php@//' | sed 's/\.//') -ge 70 ]; then
 					loop_php_module="$php7_module"
